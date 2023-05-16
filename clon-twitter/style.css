@@ -1,0 +1,173 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navegation-list{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegation{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    border-top: 1px solid rgb(35, 35, 35);
+}
+
+.fa-solid{
+    font-size: 25px;
+}
+
+.encabezado-tweet{
+    display: flex;
+    flex-direction: row;
+}
+
+.arrow-icon{
+    display: flex;
+    align-items: center;
+    padding: 0px 40px 0px 20px;
+}
+
+.fa-arrow-left{
+    font-size: 18px;
+}
+
+h3{
+    font-weight: 300;
+}
+
+.tweet{
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info{
+    display: flex;
+}
+
+.user-logo{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+}
+
+.nasa-logo{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.user-twitter{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-name{
+    font-weight: 500;
+}
+
+.fa-circle-check{
+    font-size: 15px;
+}
+
+.user-name-tw{
+    font-weight: 100;
+}
+
+.text-tweet{
+    width: 90%;
+    font-weight: 300;
+}
+
+.container-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-link{
+    color: rgb(8, 190, 241);
+}
+
+.img-tweet-container{
+    width: 80%;
+    border: 2px solid rgb(76, 75, 75);
+    border-radius: 6px;
+    margin: 0;
+}
+
+.img-tweet{
+    width: 100%;
+}
+
+aside{
+    display: none;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+@media(min-width:500px){
+    body{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .navegation-list{
+        flex-direction: column;
+        padding: 15px;
+    }
+    .navegation{
+        border-right: 1px solid gray;
+    }
+}
+@media(min-width:700px){
+    main{
+        width: 90vh;
+    }
+    body{
+        display: flex;
+        justify-content:center
+    }
+}
+
+@media (min-width:1005px){
+    main{
+        width: 150vh;
+    }
+    .container{
+        width: 100vh;
+    }
+    aside{
+        display: flex;
+        width: 40vh;
+        border: 2px solid grey;
+        margin: 10px;
+    }
+}
